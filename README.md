@@ -10,5 +10,5 @@ For the main project, I chose to inspect differences about venue types among the
 Codes for the project are stored in a the folder "Segregation_Consumption_Chicago", in a Jupyter Notebook file named "Segregation and Shopping Options in Chicago";     
 full report is stored in the PDF file named "Coursera Captone Report" in the same folder.
 
-8.21 Update: 
-Notebook and report finalized and uploaded. 
+A shortened report, published as a blogpost, can be accessed via this link: 
+https://medium.com/@wang37h/segregation-consumption-options-in-chicago-d62cb6852579
