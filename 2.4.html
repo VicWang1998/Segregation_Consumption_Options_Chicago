@@ -1,0 +1,2605 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_5da7fd2c5a034e4c9e6ad4a988d91a05 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5da7fd2c5a034e4c9e6ad4a988d91a05" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_5da7fd2c5a034e4c9e6ad4a988d91a05 = L.map(
+                                  'map_5da7fd2c5a034e4c9e6ad4a988d91a05',
+                                  {center: [41.8755616,-87.6244212],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_bcdd08eb04134a4c81b518158b8e3b2a = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+        
+    
+            var circle_marker_f9dcfd7ff5f74cf7a59a25ae1c8623ac = L.circleMarker(
+                [42.01053135,-87.6707481966481],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_b6dcef7f6ae44fa0b57dd1b19a47dd65 = L.popup({maxWidth: '300'});
+
+            
+                var html_e69ab32e365a4ba79b7dcd0f563886a2 = $('<div id="html_e69ab32e365a4ba79b7dcd0f563886a2" style="width: 100.0%; height: 100.0%;">Rogers Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_b6dcef7f6ae44fa0b57dd1b19a47dd65.setContent(html_e69ab32e365a4ba79b7dcd0f563886a2);
+            
+
+            circle_marker_f9dcfd7ff5f74cf7a59a25ae1c8623ac.bindPopup(popup_b6dcef7f6ae44fa0b57dd1b19a47dd65);
+
+            
+        
+    
+            var circle_marker_ff848cc06cfd479cb5fab42868333a1c = L.circleMarker(
+                [42.003548200000004,-87.69624259999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_4b88f91c497745fa83a818b788ff2cb2 = L.popup({maxWidth: '300'});
+
+            
+                var html_01f2b69cfd1a4ac88be1a402bc03008e = $('<div id="html_01f2b69cfd1a4ac88be1a402bc03008e" style="width: 100.0%; height: 100.0%;">West Ridge, Chicago, IL, cluster: 1</div>')[0];
+                popup_4b88f91c497745fa83a818b788ff2cb2.setContent(html_01f2b69cfd1a4ac88be1a402bc03008e);
+            
+
+            circle_marker_ff848cc06cfd479cb5fab42868333a1c.bindPopup(popup_4b88f91c497745fa83a818b788ff2cb2);
+
+            
+        
+    
+            var circle_marker_56621f8aa30b46c88abf21f14afe23ff = L.circleMarker(
+                [41.9666299,-87.6555458],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_23c1723879db4f018230e0f5c113b2ed = L.popup({maxWidth: '300'});
+
+            
+                var html_2802ecb64400412680c2b52a1c1f1084 = $('<div id="html_2802ecb64400412680c2b52a1c1f1084" style="width: 100.0%; height: 100.0%;">Uptown, Chicago, IL, cluster: 3</div>')[0];
+                popup_23c1723879db4f018230e0f5c113b2ed.setContent(html_2802ecb64400412680c2b52a1c1f1084);
+            
+
+            circle_marker_56621f8aa30b46c88abf21f14afe23ff.bindPopup(popup_23c1723879db4f018230e0f5c113b2ed);
+
+            
+        
+    
+            var circle_marker_4037aec9c4644829a6e79226fc81a9fb = L.circleMarker(
+                [41.9687,-87.689],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_e2effd3c0d2945748c728fda62056cd0 = L.popup({maxWidth: '300'});
+
+            
+                var html_64c10ebd0abf49c2bb01527093512577 = $('<div id="html_64c10ebd0abf49c2bb01527093512577" style="width: 100.0%; height: 100.0%;">Lincoln Square, Chicago, IL, cluster: 1</div>')[0];
+                popup_e2effd3c0d2945748c728fda62056cd0.setContent(html_64c10ebd0abf49c2bb01527093512577);
+            
+
+            circle_marker_4037aec9c4644829a6e79226fc81a9fb.bindPopup(popup_e2effd3c0d2945748c728fda62056cd0);
+
+            
+        
+    
+            var circle_marker_ce0126797c3c45f39136f98e28ecf6b3 = L.circleMarker(
+                [41.9561073,-87.67915959999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_658aa5d13c6b46269a6e6cfafa306f37 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3d9093f70984fb6810bcc988d112d6c = $('<div id="html_d3d9093f70984fb6810bcc988d112d6c" style="width: 100.0%; height: 100.0%;">North Center, Chicago, IL, cluster: 1</div>')[0];
+                popup_658aa5d13c6b46269a6e6cfafa306f37.setContent(html_d3d9093f70984fb6810bcc988d112d6c);
+            
+
+            circle_marker_ce0126797c3c45f39136f98e28ecf6b3.bindPopup(popup_658aa5d13c6b46269a6e6cfafa306f37);
+
+            
+        
+    
+            var circle_marker_6a6a0842251246cb937c8032a790c738 = L.circleMarker(
+                [41.94705,-87.6554287829005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_1343622d5c544bde98d80cae43279333 = L.popup({maxWidth: '300'});
+
+            
+                var html_49d4776f18db4485a3916c71ce091a1a = $('<div id="html_49d4776f18db4485a3916c71ce091a1a" style="width: 100.0%; height: 100.0%;">Lake View, Chicago, IL, cluster: 3</div>')[0];
+                popup_1343622d5c544bde98d80cae43279333.setContent(html_49d4776f18db4485a3916c71ce091a1a);
+            
+
+            circle_marker_6a6a0842251246cb937c8032a790c738.bindPopup(popup_1343622d5c544bde98d80cae43279333);
+
+            
+        
+    
+            var circle_marker_f5a20dab64684e5eae921a31a42f160c = L.circleMarker(
+                [41.94029765,-87.63811710541759],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_63a4ecc57115422e9dee9f8f5bf756c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c7af6b089c74a7fbda6922a00484737 = $('<div id="html_2c7af6b089c74a7fbda6922a00484737" style="width: 100.0%; height: 100.0%;">Lincoln Park, Chicago, IL, cluster: 3</div>')[0];
+                popup_63a4ecc57115422e9dee9f8f5bf756c9.setContent(html_2c7af6b089c74a7fbda6922a00484737);
+            
+
+            circle_marker_f5a20dab64684e5eae921a31a42f160c.bindPopup(popup_63a4ecc57115422e9dee9f8f5bf756c9);
+
+            
+        
+    
+            var circle_marker_ecebc5e763474155811063507d43fbc2 = L.circleMarker(
+                [41.900032700000004,-87.6344975],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_06cf4ac45cbe4b9d8fcd3e96543f711f = L.popup({maxWidth: '300'});
+
+            
+                var html_fccf5c37a6f6479d9773826d60a602d6 = $('<div id="html_fccf5c37a6f6479d9773826d60a602d6" style="width: 100.0%; height: 100.0%;">Near North Side, Chicago, IL, cluster: 3</div>')[0];
+                popup_06cf4ac45cbe4b9d8fcd3e96543f711f.setContent(html_fccf5c37a6f6479d9773826d60a602d6);
+            
+
+            circle_marker_ecebc5e763474155811063507d43fbc2.bindPopup(popup_06cf4ac45cbe4b9d8fcd3e96543f711f);
+
+            
+        
+    
+            var circle_marker_34ee41afe87d442eba13632979229489 = L.circleMarker(
+                [42.005733500000005,-87.8140036737589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_319eedb53f89413db26e30be271b476e = L.popup({maxWidth: '300'});
+
+            
+                var html_184cccc3042f461cb8ba4d6441be8dcf = $('<div id="html_184cccc3042f461cb8ba4d6441be8dcf" style="width: 100.0%; height: 100.0%;">Edison Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_319eedb53f89413db26e30be271b476e.setContent(html_184cccc3042f461cb8ba4d6441be8dcf);
+            
+
+            circle_marker_34ee41afe87d442eba13632979229489.bindPopup(popup_319eedb53f89413db26e30be271b476e);
+
+            
+        
+    
+            var circle_marker_a4c142e8b9154e57afa88ebcfcc16777 = L.circleMarker(
+                [41.9855895,-87.80057720132271],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_c600b56eeee94f198360b1d2c1943213 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed1ef46b19834b3d9a3a5736672598b7 = $('<div id="html_ed1ef46b19834b3d9a3a5736672598b7" style="width: 100.0%; height: 100.0%;">Norwood Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_c600b56eeee94f198360b1d2c1943213.setContent(html_ed1ef46b19834b3d9a3a5736672598b7);
+            
+
+            circle_marker_a4c142e8b9154e57afa88ebcfcc16777.bindPopup(popup_c600b56eeee94f198360b1d2c1943213);
+
+            
+        
+    
+            var circle_marker_9fb21c5dcb3f4326a9ee98b05a1580c9 = L.circleMarker(
+                [41.9697375,-87.7631179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_9c1751b89d724bb69d27ee4e60103320 = L.popup({maxWidth: '300'});
+
+            
+                var html_27c735cf73a44aac9998e4c483f1d09f = $('<div id="html_27c735cf73a44aac9998e4c483f1d09f" style="width: 100.0%; height: 100.0%;">Jefferson Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_9c1751b89d724bb69d27ee4e60103320.setContent(html_27c735cf73a44aac9998e4c483f1d09f);
+            
+
+            circle_marker_9fb21c5dcb3f4326a9ee98b05a1580c9.bindPopup(popup_9c1751b89d724bb69d27ee4e60103320);
+
+            
+        
+    
+            var circle_marker_781f770a1e2842bbb25d8100462ffb10 = L.circleMarker(
+                [41.99175155,-87.7516732983677],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_0be1b5b1e814475f9c4423613bb365a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_bace9e8115ed48279310bde4fd787115 = $('<div id="html_bace9e8115ed48279310bde4fd787115" style="width: 100.0%; height: 100.0%;">Forest Glen, Chicago, IL, cluster: 1</div>')[0];
+                popup_0be1b5b1e814475f9c4423613bb365a0.setContent(html_bace9e8115ed48279310bde4fd787115);
+            
+
+            circle_marker_781f770a1e2842bbb25d8100462ffb10.bindPopup(popup_0be1b5b1e814475f9c4423613bb365a0);
+
+            
+        
+    
+            var circle_marker_7dc4f7bc83a44bd6b12db6eb2079ca1d = L.circleMarker(
+                [41.98495475,-87.72293435387871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8397df106995474dab08af719b531c67 = L.popup({maxWidth: '300'});
+
+            
+                var html_019f80098260495cabc96a5751e1fb2d = $('<div id="html_019f80098260495cabc96a5751e1fb2d" style="width: 100.0%; height: 100.0%;">North Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_8397df106995474dab08af719b531c67.setContent(html_019f80098260495cabc96a5751e1fb2d);
+            
+
+            circle_marker_7dc4f7bc83a44bd6b12db6eb2079ca1d.bindPopup(popup_8397df106995474dab08af719b531c67);
+
+            
+        
+    
+            var circle_marker_e47658d4461e4a61b64faa0c6e64680b = L.circleMarker(
+                [41.9719367,-87.7161739],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_fef498bae8864693aa0f9604fc8d78ae = L.popup({maxWidth: '300'});
+
+            
+                var html_a49ff121d1554befb837c81288e84a1d = $('<div id="html_a49ff121d1554befb837c81288e84a1d" style="width: 100.0%; height: 100.0%;">Albany Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_fef498bae8864693aa0f9604fc8d78ae.setContent(html_a49ff121d1554befb837c81288e84a1d);
+            
+
+            circle_marker_e47658d4461e4a61b64faa0c6e64680b.bindPopup(popup_fef498bae8864693aa0f9604fc8d78ae);
+
+            
+        
+    
+            var circle_marker_2a601fb5a7264f78a7117408d610cbe1 = L.circleMarker(
+                [41.9578093,-87.7650594],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_45bbb86c32b5472a8201c35f31ebceb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_026eec604c874653a1d917743ff92821 = $('<div id="html_026eec604c874653a1d917743ff92821" style="width: 100.0%; height: 100.0%;">Portage Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_45bbb86c32b5472a8201c35f31ebceb9.setContent(html_026eec604c874653a1d917743ff92821);
+            
+
+            circle_marker_2a601fb5a7264f78a7117408d610cbe1.bindPopup(popup_45bbb86c32b5472a8201c35f31ebceb9);
+
+            
+        
+    
+            var circle_marker_ab89a57f7d904631aa660f89dce346e9 = L.circleMarker(
+                [41.953365000000005,-87.73644709999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_400c1beb09074d0ea1fcee187473041e = L.popup({maxWidth: '300'});
+
+            
+                var html_7ca76ff547d244f8a8b11394d045e608 = $('<div id="html_7ca76ff547d244f8a8b11394d045e608" style="width: 100.0%; height: 100.0%;">Irving Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_400c1beb09074d0ea1fcee187473041e.setContent(html_7ca76ff547d244f8a8b11394d045e608);
+            
+
+            circle_marker_ab89a57f7d904631aa660f89dce346e9.bindPopup(popup_400c1beb09074d0ea1fcee187473041e);
+
+            
+        
+    
+            var circle_marker_040fbca24e9e4115b0265fce0c6e19f9 = L.circleMarker(
+                [41.952809,-87.7964493],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_64bd3a7cec544bc09c87719ebb90ffe0 = L.popup({maxWidth: '300'});
+
+            
+                var html_38dd5ea8f90c42079589d1fc3695f505 = $('<div id="html_38dd5ea8f90c42079589d1fc3695f505" style="width: 100.0%; height: 100.0%;">Dunning, Chicago, IL, cluster: 1</div>')[0];
+                popup_64bd3a7cec544bc09c87719ebb90ffe0.setContent(html_38dd5ea8f90c42079589d1fc3695f505);
+            
+
+            circle_marker_040fbca24e9e4115b0265fce0c6e19f9.bindPopup(popup_64bd3a7cec544bc09c87719ebb90ffe0);
+
+            
+        
+    
+            var circle_marker_780493694e0d4f44b637a3a27efbecd8 = L.circleMarker(
+                [41.9253091,-87.8008931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_ce54def630dd4c7c89538dadb54ccdea = L.popup({maxWidth: '300'});
+
+            
+                var html_4da47b411c8b4f3981ad49a18544884d = $('<div id="html_4da47b411c8b4f3981ad49a18544884d" style="width: 100.0%; height: 100.0%;">Montclare, Chicago, IL, cluster: 2</div>')[0];
+                popup_ce54def630dd4c7c89538dadb54ccdea.setContent(html_4da47b411c8b4f3981ad49a18544884d);
+            
+
+            circle_marker_780493694e0d4f44b637a3a27efbecd8.bindPopup(popup_ce54def630dd4c7c89538dadb54ccdea);
+
+            
+        
+    
+            var circle_marker_6786b41d743446cabd6453bd39f7c751 = L.circleMarker(
+                [41.931698299999994,-87.7686699],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_b981ebaa961b4afd940042a8cc3ed74a = L.popup({maxWidth: '300'});
+
+            
+                var html_7d7f02b3a78c474691e773a037fc97a5 = $('<div id="html_7d7f02b3a78c474691e773a037fc97a5" style="width: 100.0%; height: 100.0%;">Belmont Cragin, Chicago, IL, cluster: 2</div>')[0];
+                popup_b981ebaa961b4afd940042a8cc3ed74a.setContent(html_7d7f02b3a78c474691e773a037fc97a5);
+            
+
+            circle_marker_6786b41d743446cabd6453bd39f7c751.bindPopup(popup_b981ebaa961b4afd940042a8cc3ed74a);
+
+            
+        
+    
+            var circle_marker_7ec7a1ae28184b318f6445025a3c4daa = L.circleMarker(
+                [41.928643,-87.73450190000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_5aa2a2497ab247c49e0c8d62cb3ba79c = L.popup({maxWidth: '300'});
+
+            
+                var html_6e6505c6f85b4e27af152e31c935cceb = $('<div id="html_6e6505c6f85b4e27af152e31c935cceb" style="width: 100.0%; height: 100.0%;">Hermosa, Chicago, IL, cluster: 2</div>')[0];
+                popup_5aa2a2497ab247c49e0c8d62cb3ba79c.setContent(html_6e6505c6f85b4e27af152e31c935cceb);
+            
+
+            circle_marker_7ec7a1ae28184b318f6445025a3c4daa.bindPopup(popup_5aa2a2497ab247c49e0c8d62cb3ba79c);
+
+            
+        
+    
+            var circle_marker_1b321a73fa724792b8b56297c32af659 = L.circleMarker(
+                [41.9389208,-87.711168],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_d055010805ec482fa8dee87d5c86ccfe = L.popup({maxWidth: '300'});
+
+            
+                var html_c2d8b2b895d941d8b74eea77f946683d = $('<div id="html_c2d8b2b895d941d8b74eea77f946683d" style="width: 100.0%; height: 100.0%;">Avondale, Chicago, IL, cluster: 3</div>')[0];
+                popup_d055010805ec482fa8dee87d5c86ccfe.setContent(html_c2d8b2b895d941d8b74eea77f946683d);
+            
+
+            circle_marker_1b321a73fa724792b8b56297c32af659.bindPopup(popup_d055010805ec482fa8dee87d5c86ccfe);
+
+            
+        
+    
+            var circle_marker_f7d3a34692d94d4e97bc32ce26708b05 = L.circleMarker(
+                [41.928399600000006,-87.7067641113273],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_270847292366487ca3563e8bf43e7019 = L.popup({maxWidth: '300'});
+
+            
+                var html_89fd48c28000473c88ab96aadf28d66e = $('<div id="html_89fd48c28000473c88ab96aadf28d66e" style="width: 100.0%; height: 100.0%;">Logan Square, Chicago, IL, cluster: 3</div>')[0];
+                popup_270847292366487ca3563e8bf43e7019.setContent(html_89fd48c28000473c88ab96aadf28d66e);
+            
+
+            circle_marker_f7d3a34692d94d4e97bc32ce26708b05.bindPopup(popup_270847292366487ca3563e8bf43e7019);
+
+            
+        
+    
+            var circle_marker_240eb284211e4dc192376e3f4ff9d06f = L.circleMarker(
+                [41.905766799999995,-87.70417370000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_df7dbafc4ab749448962e8a4f5536e1b = L.popup({maxWidth: '300'});
+
+            
+                var html_bf77360c2a1a4539b68bdddc2d52ce0e = $('<div id="html_bf77360c2a1a4539b68bdddc2d52ce0e" style="width: 100.0%; height: 100.0%;">Humboldt park, Chicago, IL, cluster: 3</div>')[0];
+                popup_df7dbafc4ab749448962e8a4f5536e1b.setContent(html_bf77360c2a1a4539b68bdddc2d52ce0e);
+            
+
+            circle_marker_240eb284211e4dc192376e3f4ff9d06f.bindPopup(popup_df7dbafc4ab749448962e8a4f5536e1b);
+
+            
+        
+    
+            var circle_marker_db4d37940a7547269747ccf35e5d6d3f = L.circleMarker(
+                [41.901421299999996,-87.6861661],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_1345842943d4499b94d42d5251e6fb81 = L.popup({maxWidth: '300'});
+
+            
+                var html_d62f0465233947e195a3f933c936b6d2 = $('<div id="html_d62f0465233947e195a3f933c936b6d2" style="width: 100.0%; height: 100.0%;">West Town, Chicago, IL, cluster: 3</div>')[0];
+                popup_1345842943d4499b94d42d5251e6fb81.setContent(html_d62f0465233947e195a3f933c936b6d2);
+            
+
+            circle_marker_db4d37940a7547269747ccf35e5d6d3f.bindPopup(popup_1345842943d4499b94d42d5251e6fb81);
+
+            
+        
+    
+            var circle_marker_73a2ebc1a962470a83f7da7ff3a97ff5 = L.circleMarker(
+                [41.8878759,-87.76485079999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_7476e514777642368b79131e68db4dfe = L.popup({maxWidth: '300'});
+
+            
+                var html_3bceb459f993439ea41491fb398bc56f = $('<div id="html_3bceb459f993439ea41491fb398bc56f" style="width: 100.0%; height: 100.0%;">Austin, Chicago, IL, cluster: 0</div>')[0];
+                popup_7476e514777642368b79131e68db4dfe.setContent(html_3bceb459f993439ea41491fb398bc56f);
+            
+
+            circle_marker_73a2ebc1a962470a83f7da7ff3a97ff5.bindPopup(popup_7476e514777642368b79131e68db4dfe);
+
+            
+        
+    
+            var circle_marker_2ce69172a80c4965be3e6fbb08b54b8c = L.circleMarker(
+                [41.880587799999994,-87.72922270000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_9e83c306e1fc42b6996d52f3f40bb42e = L.popup({maxWidth: '300'});
+
+            
+                var html_05b525959261437b97fa9c494d626894 = $('<div id="html_05b525959261437b97fa9c494d626894" style="width: 100.0%; height: 100.0%;">West Garfield Park, Chicago, IL, cluster: 0</div>')[0];
+                popup_9e83c306e1fc42b6996d52f3f40bb42e.setContent(html_05b525959261437b97fa9c494d626894);
+            
+
+            circle_marker_2ce69172a80c4965be3e6fbb08b54b8c.bindPopup(popup_9e83c306e1fc42b6996d52f3f40bb42e);
+
+            
+        
+    
+            var circle_marker_41fcf573d78346d398d6ab7ea157065d = L.circleMarker(
+                [41.8808657,-87.7028328],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_017d2534582a473bbf0cd68408dfcac7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2bf014a1c8294dd1bdffaa9d31c73636 = $('<div id="html_2bf014a1c8294dd1bdffaa9d31c73636" style="width: 100.0%; height: 100.0%;">East Garfield Park, Chicago, IL, cluster: 0</div>')[0];
+                popup_017d2534582a473bbf0cd68408dfcac7.setContent(html_2bf014a1c8294dd1bdffaa9d31c73636);
+            
+
+            circle_marker_41fcf573d78346d398d6ab7ea157065d.bindPopup(popup_017d2534582a473bbf0cd68408dfcac7);
+
+            
+        
+    
+            var circle_marker_f1f9f633015140cdb860a90857980c12 = L.circleMarker(
+                [41.8800656,-87.66676240000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8c01ed1658f245d6b7ef65994c9b57a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_f9f856fada1f45c692a30c65053c8064 = $('<div id="html_f9f856fada1f45c692a30c65053c8064" style="width: 100.0%; height: 100.0%;">Near West Side, Chicago, IL, cluster: 3</div>')[0];
+                popup_8c01ed1658f245d6b7ef65994c9b57a7.setContent(html_f9f856fada1f45c692a30c65053c8064);
+            
+
+            circle_marker_f1f9f633015140cdb860a90857980c12.bindPopup(popup_8c01ed1658f245d6b7ef65994c9b57a7);
+
+            
+        
+    
+            var circle_marker_9e71fb15043045bb9534f211717bd299 = L.circleMarker(
+                [41.860032399999994,-87.71838829999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_77a8c569db0c48d7811e49aada72c4cf = L.popup({maxWidth: '300'});
+
+            
+                var html_fbd35820a28449fa80e8637a87afdb6c = $('<div id="html_fbd35820a28449fa80e8637a87afdb6c" style="width: 100.0%; height: 100.0%;">North Lawndale, Chicago, IL, cluster: 2</div>')[0];
+                popup_77a8c569db0c48d7811e49aada72c4cf.setContent(html_fbd35820a28449fa80e8637a87afdb6c);
+            
+
+            circle_marker_9e71fb15043045bb9534f211717bd299.bindPopup(popup_77a8c569db0c48d7811e49aada72c4cf);
+
+            
+        
+    
+            var circle_marker_13defe0d8a61444485b87d27cf398a48 = L.circleMarker(
+                [41.8436437,-87.71255440000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_f33e6cfb49f84b5f9ade8ea0493501ea = L.popup({maxWidth: '300'});
+
+            
+                var html_bb633fa09a3e4ad7a61bd7de9011ffed = $('<div id="html_bb633fa09a3e4ad7a61bd7de9011ffed" style="width: 100.0%; height: 100.0%;">South Lawndale, Chicago, IL, cluster: 2</div>')[0];
+                popup_f33e6cfb49f84b5f9ade8ea0493501ea.setContent(html_bb633fa09a3e4ad7a61bd7de9011ffed);
+            
+
+            circle_marker_13defe0d8a61444485b87d27cf398a48.bindPopup(popup_f33e6cfb49f84b5f9ade8ea0493501ea);
+
+            
+        
+    
+            var circle_marker_2a781b58600645dd909ae94116fee5d1 = L.circleMarker(
+                [41.8541996,-87.66560859999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_4fdeeaeb6f0a4587b7fa94f559ba7f67 = L.popup({maxWidth: '300'});
+
+            
+                var html_c376876a0d49460490050b8867183efc = $('<div id="html_c376876a0d49460490050b8867183efc" style="width: 100.0%; height: 100.0%;">Lower West Side, Chicago, IL, cluster: 2</div>')[0];
+                popup_4fdeeaeb6f0a4587b7fa94f559ba7f67.setContent(html_c376876a0d49460490050b8867183efc);
+            
+
+            circle_marker_2a781b58600645dd909ae94116fee5d1.bindPopup(popup_4fdeeaeb6f0a4587b7fa94f559ba7f67);
+
+            
+        
+    
+            var circle_marker_e9ae2b47a9074d81b4d9e16c05307c94 = L.circleMarker(
+                [41.875561600000005,-87.6244212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_ea9af7adf5ad49089641e1d9e9045a92 = L.popup({maxWidth: '300'});
+
+            
+                var html_090ded6ff69a4910978cd86d831e7311 = $('<div id="html_090ded6ff69a4910978cd86d831e7311" style="width: 100.0%; height: 100.0%;">Loop, Chicago, IL, cluster: 3</div>')[0];
+                popup_ea9af7adf5ad49089641e1d9e9045a92.setContent(html_090ded6ff69a4910978cd86d831e7311);
+            
+
+            circle_marker_e9ae2b47a9074d81b4d9e16c05307c94.bindPopup(popup_ea9af7adf5ad49089641e1d9e9045a92);
+
+            
+        
+    
+            var circle_marker_15e568ff878549e9a9fb1688b9a50106 = L.circleMarker(
+                [41.8566999,-87.6247738],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_b2bda68ad1364d22a109decaf031fbe1 = L.popup({maxWidth: '300'});
+
+            
+                var html_95d862f3510f4cd09cf2c4955316161d = $('<div id="html_95d862f3510f4cd09cf2c4955316161d" style="width: 100.0%; height: 100.0%;">Near South Side, Chicago, IL, cluster: 1</div>')[0];
+                popup_b2bda68ad1364d22a109decaf031fbe1.setContent(html_95d862f3510f4cd09cf2c4955316161d);
+            
+
+            circle_marker_15e568ff878549e9a9fb1688b9a50106.bindPopup(popup_b2bda68ad1364d22a109decaf031fbe1);
+
+            
+        
+    
+            var circle_marker_c16de3cf5f77473489d1164561388c4d = L.circleMarker(
+                [41.8400333,-87.633107],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_a961b025959a48358a5cd744e6a9e8f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_50dc7a20acbf451ab54bdec0061bded0 = $('<div id="html_50dc7a20acbf451ab54bdec0061bded0" style="width: 100.0%; height: 100.0%;">Armour Square, Chicago, IL, cluster: 1</div>')[0];
+                popup_a961b025959a48358a5cd744e6a9e8f6.setContent(html_50dc7a20acbf451ab54bdec0061bded0);
+            
+
+            circle_marker_c16de3cf5f77473489d1164561388c4d.bindPopup(popup_a961b025959a48358a5cd744e6a9e8f6);
+
+            
+        
+    
+            var circle_marker_51cee8bac31043e895fd321e077879a2 = L.circleMarker(
+                [41.8348565,-87.61795359999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_9208ebdb9f354aaf91038a472e7206c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_bdcfde7325c54e81a71370e060d84dba = $('<div id="html_bdcfde7325c54e81a71370e060d84dba" style="width: 100.0%; height: 100.0%;">Douglas, Chicago, IL, cluster: 1</div>')[0];
+                popup_9208ebdb9f354aaf91038a472e7206c9.setContent(html_bdcfde7325c54e81a71370e060d84dba);
+            
+
+            circle_marker_51cee8bac31043e895fd321e077879a2.bindPopup(popup_9208ebdb9f354aaf91038a472e7206c9);
+
+            
+        
+    
+            var circle_marker_35948d2316c341b3b5fa891c7c5770b9 = L.circleMarker(
+                [41.82400155,-87.60510210428909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_bbd158deed224bb99707f16ff8062dc6 = L.popup({maxWidth: '300'});
+
+            
+                var html_6cf4af11ae3e4fbd88d34bbd2250dc6e = $('<div id="html_6cf4af11ae3e4fbd88d34bbd2250dc6e" style="width: 100.0%; height: 100.0%;">Oakland, Chicago, IL, cluster: 0</div>')[0];
+                popup_bbd158deed224bb99707f16ff8062dc6.setContent(html_6cf4af11ae3e4fbd88d34bbd2250dc6e);
+            
+
+            circle_marker_35948d2316c341b3b5fa891c7c5770b9.bindPopup(popup_bbd158deed224bb99707f16ff8062dc6);
+
+            
+        
+    
+            var circle_marker_4e44d4be2000460b922f764783b6ddda = L.circleMarker(
+                [41.8180891,-87.63255079999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_c52ccf1ce37e40668c0c61a0891f0f5c = L.popup({maxWidth: '300'});
+
+            
+                var html_f5be304cbad04810a317c5c853a52aa6 = $('<div id="html_f5be304cbad04810a317c5c853a52aa6" style="width: 100.0%; height: 100.0%;">Fuller Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_c52ccf1ce37e40668c0c61a0891f0f5c.setContent(html_f5be304cbad04810a317c5c853a52aa6);
+            
+
+            circle_marker_4e44d4be2000460b922f764783b6ddda.bindPopup(popup_c52ccf1ce37e40668c0c61a0891f0f5c);
+
+            
+        
+    
+            var circle_marker_d1ade2d1659b40f989d5c3b49e055ee9 = L.circleMarker(
+                [41.813922600000005,-87.6172724],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_108c8100f9b141289c94295c5319de7c = L.popup({maxWidth: '300'});
+
+            
+                var html_b0599b3acbc74193be8ee165a6d8783c = $('<div id="html_b0599b3acbc74193be8ee165a6d8783c" style="width: 100.0%; height: 100.0%;">Grand Boulevard, Chicago, IL, cluster: 0</div>')[0];
+                popup_108c8100f9b141289c94295c5319de7c.setContent(html_b0599b3acbc74193be8ee165a6d8783c);
+            
+
+            circle_marker_d1ade2d1659b40f989d5c3b49e055ee9.bindPopup(popup_108c8100f9b141289c94295c5319de7c);
+
+            
+        
+    
+            var circle_marker_a3ab79fc1c3343feacdc56c6b91524a5 = L.circleMarker(
+                [41.809144399999994,-87.59799079999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_3706e739303f4972be6c67595a0bf3e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_888eeb9b3be2486b9bfc889b71d198e1 = $('<div id="html_888eeb9b3be2486b9bfc889b71d198e1" style="width: 100.0%; height: 100.0%;">Kenwood, Chicago, IL, cluster: 3</div>')[0];
+                popup_3706e739303f4972be6c67595a0bf3e9.setContent(html_888eeb9b3be2486b9bfc889b71d198e1);
+            
+
+            circle_marker_a3ab79fc1c3343feacdc56c6b91524a5.bindPopup(popup_3706e739303f4972be6c67595a0bf3e9);
+
+            
+        
+    
+            var circle_marker_3d9d37823c654d16bbe3af4d26059383 = L.circleMarker(
+                [41.7925338,-87.6181052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_c0f3db18ccdc46e1969eea90b3edeb9f = L.popup({maxWidth: '300'});
+
+            
+                var html_d9947e7086184cacb5cdcbe0cd398e00 = $('<div id="html_d9947e7086184cacb5cdcbe0cd398e00" style="width: 100.0%; height: 100.0%;">Washington Park, Chicago, IL, cluster: 3</div>')[0];
+                popup_c0f3db18ccdc46e1969eea90b3edeb9f.setContent(html_d9947e7086184cacb5cdcbe0cd398e00);
+            
+
+            circle_marker_3d9d37823c654d16bbe3af4d26059383.bindPopup(popup_c0f3db18ccdc46e1969eea90b3edeb9f);
+
+            
+        
+    
+            var circle_marker_91c80dc7d3f0469b89657b077d77f29a = L.circleMarker(
+                [41.7944464,-87.5939244],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_9abfb35c2c2b4f3bb18b04351e6a89e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_12bcd41c6dff425fb49cbcdd0166a517 = $('<div id="html_12bcd41c6dff425fb49cbcdd0166a517" style="width: 100.0%; height: 100.0%;">Hyde Park, Chicago, IL, cluster: 3</div>')[0];
+                popup_9abfb35c2c2b4f3bb18b04351e6a89e6.setContent(html_12bcd41c6dff425fb49cbcdd0166a517);
+            
+
+            circle_marker_91c80dc7d3f0469b89657b077d77f29a.bindPopup(popup_9abfb35c2c2b4f3bb18b04351e6a89e6);
+
+            
+        
+    
+            var circle_marker_d6b2ad25c9694badab4b93932eb55227 = L.circleMarker(
+                [41.779478600000004,-87.59949300000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_61221fa2f0ef44d19a92bcb53e2eb83e = L.popup({maxWidth: '300'});
+
+            
+                var html_34d73ac63caa4690a83e98f1d2720d16 = $('<div id="html_34d73ac63caa4690a83e98f1d2720d16" style="width: 100.0%; height: 100.0%;">Woodlawn, Chicago, IL, cluster: 3</div>')[0];
+                popup_61221fa2f0ef44d19a92bcb53e2eb83e.setContent(html_34d73ac63caa4690a83e98f1d2720d16);
+            
+
+            circle_marker_d6b2ad25c9694badab4b93932eb55227.bindPopup(popup_61221fa2f0ef44d19a92bcb53e2eb83e);
+
+            
+        
+    
+            var circle_marker_105570743d914992870ad672dddb8efd = L.circleMarker(
+                [41.7626438,-87.57517861794621],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8b5a6af49414496bb70428663c1a42e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_7a0dd582f2af4917a467b6b452109850 = $('<div id="html_7a0dd582f2af4917a467b6b452109850" style="width: 100.0%; height: 100.0%;">South Shore, Chicago, IL, cluster: 0</div>')[0];
+                popup_8b5a6af49414496bb70428663c1a42e3.setContent(html_7a0dd582f2af4917a467b6b452109850);
+            
+
+            circle_marker_105570743d914992870ad672dddb8efd.bindPopup(popup_8b5a6af49414496bb70428663c1a42e3);
+
+            
+        
+    
+            var circle_marker_360d0908b93f4a94aa9068b2d4f45c6c = L.circleMarker(
+                [41.74114539999999,-87.6125481],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_d0fe98621d2b41db94036ddf0bb898c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed614bc12a42498d967e93471e31036f = $('<div id="html_ed614bc12a42498d967e93471e31036f" style="width: 100.0%; height: 100.0%;">Chatham, Chicago, IL, cluster: 0</div>')[0];
+                popup_d0fe98621d2b41db94036ddf0bb898c1.setContent(html_ed614bc12a42498d967e93471e31036f);
+            
+
+            circle_marker_360d0908b93f4a94aa9068b2d4f45c6c.bindPopup(popup_d0fe98621d2b41db94036ddf0bb898c1);
+
+            
+        
+    
+            var circle_marker_ff12bee5ddd24b9282cbd161dbe66aac = L.circleMarker(
+                [41.745034600000004,-87.5886584],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_bebbf8ba2fc34d10bddc031c443e389a = L.popup({maxWidth: '300'});
+
+            
+                var html_6166cb0ecc634f0f83ee3c80beb8633b = $('<div id="html_6166cb0ecc634f0f83ee3c80beb8633b" style="width: 100.0%; height: 100.0%;">Avalon Park, Chicago, IL, cluster: 0</div>')[0];
+                popup_bebbf8ba2fc34d10bddc031c443e389a.setContent(html_6166cb0ecc634f0f83ee3c80beb8633b);
+            
+
+            circle_marker_ff12bee5ddd24b9282cbd161dbe66aac.bindPopup(popup_bebbf8ba2fc34d10bddc031c443e389a);
+
+            
+        
+    
+            var circle_marker_fcf14c86fe75419cb9e628cd17abef4b = L.circleMarker(
+                [41.739134299999996,-87.5490109956804],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_ae5b87109609498eaeaec0dcaac13c04 = L.popup({maxWidth: '300'});
+
+            
+                var html_5ce517d55ded46709ce44ad80071d75d = $('<div id="html_5ce517d55ded46709ce44ad80071d75d" style="width: 100.0%; height: 100.0%;">South Chicago, Chicago, IL, cluster: 2</div>')[0];
+                popup_ae5b87109609498eaeaec0dcaac13c04.setContent(html_5ce517d55ded46709ce44ad80071d75d);
+            
+
+            circle_marker_fcf14c86fe75419cb9e628cd17abef4b.bindPopup(popup_ae5b87109609498eaeaec0dcaac13c04);
+
+            
+        
+    
+            var circle_marker_2224b595181246b89c4f5c5d1c721b7f = L.circleMarker(
+                [41.730034499999995,-87.596714],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_decf9a3f659f4353a0b08c8ae93cd71f = L.popup({maxWidth: '300'});
+
+            
+                var html_b70d376cfede4f8a93308276f3d6a049 = $('<div id="html_b70d376cfede4f8a93308276f3d6a049" style="width: 100.0%; height: 100.0%;">Burnside, Chicago, IL, cluster: 0</div>')[0];
+                popup_decf9a3f659f4353a0b08c8ae93cd71f.setContent(html_b70d376cfede4f8a93308276f3d6a049);
+            
+
+            circle_marker_2224b595181246b89c4f5c5d1c721b7f.bindPopup(popup_decf9a3f659f4353a0b08c8ae93cd71f);
+
+            
+        
+    
+            var circle_marker_95b74fb018894c89b97e527661dd0c77 = L.circleMarker(
+                [41.7300347,-87.57921340000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_70ab02dccc9c47e9afb483528e7d668b = L.popup({maxWidth: '300'});
+
+            
+                var html_2a40ef2f2e9247b2bb4703a95b9d5218 = $('<div id="html_2a40ef2f2e9247b2bb4703a95b9d5218" style="width: 100.0%; height: 100.0%;">Calumet Heights, Chicago, IL, cluster: 0</div>')[0];
+                popup_70ab02dccc9c47e9afb483528e7d668b.setContent(html_2a40ef2f2e9247b2bb4703a95b9d5218);
+            
+
+            circle_marker_95b74fb018894c89b97e527661dd0c77.bindPopup(popup_70ab02dccc9c47e9afb483528e7d668b);
+
+            
+        
+    
+            var circle_marker_0b29f8164e7d4ae486b7a778c124ec99 = L.circleMarker(
+                [41.7019787,-87.625881],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_d477525d6cf647148f475f9ecafa0519 = L.popup({maxWidth: '300'});
+
+            
+                var html_b47afbf904044538b483e8b5c8ba6593 = $('<div id="html_b47afbf904044538b483e8b5c8ba6593" style="width: 100.0%; height: 100.0%;">Roseland, Chicago, IL, cluster: 0</div>')[0];
+                popup_d477525d6cf647148f475f9ecafa0519.setContent(html_b47afbf904044538b483e8b5c8ba6593);
+            
+
+            circle_marker_0b29f8164e7d4ae486b7a778c124ec99.bindPopup(popup_d477525d6cf647148f475f9ecafa0519);
+
+            
+        
+    
+            var circle_marker_2d7f32e40d6346e38024a12de6f269da = L.circleMarker(
+                [41.692218200000006,-87.60660390000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_548a15c70ce24f2a9013e0048c8a4b28 = L.popup({maxWidth: '300'});
+
+            
+                var html_58e5945d37464a6aafc357a317b8e37d = $('<div id="html_58e5945d37464a6aafc357a317b8e37d" style="width: 100.0%; height: 100.0%;">Pullman, Chicago, IL, cluster: 0</div>')[0];
+                popup_548a15c70ce24f2a9013e0048c8a4b28.setContent(html_58e5945d37464a6aafc357a317b8e37d);
+            
+
+            circle_marker_2d7f32e40d6346e38024a12de6f269da.bindPopup(popup_548a15c70ce24f2a9013e0048c8a4b28);
+
+            
+        
+    
+            var circle_marker_a365f0833d974871a7c29184254aac13 = L.circleMarker(
+                [41.896991799999995,-88.1867785],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_286eb4465a064b3b8dad77a23c0a676a = L.popup({maxWidth: '300'});
+
+            
+                var html_b7a5441a0aa64959a43bdd8dc20c4c85 = $('<div id="html_b7a5441a0aa64959a43bdd8dc20c4c85" style="width: 100.0%; height: 100.0%;">South Deering, Chicago, IL, cluster: 0</div>')[0];
+                popup_286eb4465a064b3b8dad77a23c0a676a.setContent(html_b7a5441a0aa64959a43bdd8dc20c4c85);
+            
+
+            circle_marker_a365f0833d974871a7c29184254aac13.bindPopup(popup_286eb4465a064b3b8dad77a23c0a676a);
+
+            
+        
+    
+            var circle_marker_a2374f5ca5ae470bb36596348a16f0d6 = L.circleMarker(
+                [41.694617799999996,-87.53338719999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_056d8e6d7b944c5fa5f9ced4fa7e0101 = L.popup({maxWidth: '300'});
+
+            
+                var html_029ee8294d744a4988f733d67c872814 = $('<div id="html_029ee8294d744a4988f733d67c872814" style="width: 100.0%; height: 100.0%;">East Side, Chicago, IL, cluster: 2</div>')[0];
+                popup_056d8e6d7b944c5fa5f9ced4fa7e0101.setContent(html_029ee8294d744a4988f733d67c872814);
+            
+
+            circle_marker_a2374f5ca5ae470bb36596348a16f0d6.bindPopup(popup_056d8e6d7b944c5fa5f9ced4fa7e0101);
+
+            
+        
+    
+            var circle_marker_ece64a73e83245fa957446f6562fd0dd = L.circleMarker(
+                [41.6750456,-87.637823],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_37ff11e2b8574597afa9af8aa0189f1d = L.popup({maxWidth: '300'});
+
+            
+                var html_18f2db387c5f4b64bf96c9fa94e681a6 = $('<div id="html_18f2db387c5f4b64bf96c9fa94e681a6" style="width: 100.0%; height: 100.0%;">West Pullman, Chicago, IL, cluster: 0</div>')[0];
+                popup_37ff11e2b8574597afa9af8aa0189f1d.setContent(html_18f2db387c5f4b64bf96c9fa94e681a6);
+            
+
+            circle_marker_ece64a73e83245fa957446f6562fd0dd.bindPopup(popup_37ff11e2b8574597afa9af8aa0189f1d);
+
+            
+        
+    
+            var circle_marker_6dee39e398bd4bfb944c0e9fc3b0a812 = L.circleMarker(
+                [41.6678347,-87.60496440000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_e3103e3002054ffca87c813031173af7 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc1c072c17684148945c524e1f6d352b = $('<div id="html_bc1c072c17684148945c524e1f6d352b" style="width: 100.0%; height: 100.0%;">Riverdale, Chicago, IL, cluster: 4</div>')[0];
+                popup_e3103e3002054ffca87c813031173af7.setContent(html_bc1c072c17684148945c524e1f6d352b);
+            
+
+            circle_marker_6dee39e398bd4bfb944c0e9fc3b0a812.bindPopup(popup_e3103e3002054ffca87c813031173af7);
+
+            
+        
+    
+            var circle_marker_70678de9323b4a4a88f04f55873d64f7 = L.circleMarker(
+                [41.653646200000004,-87.5469885],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_353e05d13e6f47db9bc21d3751b8e9ef = L.popup({maxWidth: '300'});
+
+            
+                var html_3bc5110762f6445ba8403ae1097fd173 = $('<div id="html_3bc5110762f6445ba8403ae1097fd173" style="width: 100.0%; height: 100.0%;">Hegewisch, Chicago, IL, cluster: 1</div>')[0];
+                popup_353e05d13e6f47db9bc21d3751b8e9ef.setContent(html_3bc5110762f6445ba8403ae1097fd173);
+            
+
+            circle_marker_70678de9323b4a4a88f04f55873d64f7.bindPopup(popup_353e05d13e6f47db9bc21d3751b8e9ef);
+
+            
+        
+    
+            var circle_marker_68bd9f1d76c8471b94b9dae0051de0fc = L.circleMarker(
+                [41.803617100000004,-87.7454915835633],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_5d6e6c5bf56a41c594af78bc3b7d3e3c = L.popup({maxWidth: '300'});
+
+            
+                var html_d510e6eef0ba4ee5b67b60e63bedaaa0 = $('<div id="html_d510e6eef0ba4ee5b67b60e63bedaaa0" style="width: 100.0%; height: 100.0%;">Garfield Ridge, Chicago, IL, cluster: 2</div>')[0];
+                popup_5d6e6c5bf56a41c594af78bc3b7d3e3c.setContent(html_d510e6eef0ba4ee5b67b60e63bedaaa0);
+            
+
+            circle_marker_68bd9f1d76c8471b94b9dae0051de0fc.bindPopup(popup_5d6e6c5bf56a41c594af78bc3b7d3e3c);
+
+            
+        
+    
+            var circle_marker_2cc19628b0ae44ba9eb250eb8496858d = L.circleMarker(
+                [41.8114215,-87.72616509999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_79fee3234cfd4bdbb36248485225b6e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_b98b3e3427ad4ba9a6f7f9703f936372 = $('<div id="html_b98b3e3427ad4ba9a6f7f9703f936372" style="width: 100.0%; height: 100.0%;">Archer Heights, Chicago, IL, cluster: 2</div>')[0];
+                popup_79fee3234cfd4bdbb36248485225b6e2.setContent(html_b98b3e3427ad4ba9a6f7f9703f936372);
+            
+
+            circle_marker_2cc19628b0ae44ba9eb250eb8496858d.bindPopup(popup_79fee3234cfd4bdbb36248485225b6e2);
+
+            
+        
+    
+            var circle_marker_5ec13fffc0584127a6d90397a04ac811 = L.circleMarker(
+                [41.8189217,-87.6989421],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_0719768ac7c64523bd6d578e4ba833ba = L.popup({maxWidth: '300'});
+
+            
+                var html_41708ef030de417cb55c9c35e66b7281 = $('<div id="html_41708ef030de417cb55c9c35e66b7281" style="width: 100.0%; height: 100.0%;">Brighton Park, Chicago, IL, cluster: 2</div>')[0];
+                popup_0719768ac7c64523bd6d578e4ba833ba.setContent(html_41708ef030de417cb55c9c35e66b7281);
+            
+
+            circle_marker_5ec13fffc0584127a6d90397a04ac811.bindPopup(popup_0719768ac7c64523bd6d578e4ba833ba);
+
+            
+        
+    
+            var circle_marker_2920353c217b4905a9dc018d65948dde = L.circleMarker(
+                [41.8316997,-87.67366379999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_ea78e64317f94103bc3a0c7ebaf26af5 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea5273262e654bb4a5d940430cb03e6e = $('<div id="html_ea5273262e654bb4a5d940430cb03e6e" style="width: 100.0%; height: 100.0%;">McKinley Park, Chicago, IL, cluster: 2</div>')[0];
+                popup_ea78e64317f94103bc3a0c7ebaf26af5.setContent(html_ea5273262e654bb4a5d940430cb03e6e);
+            
+
+            circle_marker_2920353c217b4905a9dc018d65948dde.bindPopup(popup_ea78e64317f94103bc3a0c7ebaf26af5);
+
+            
+        
+    
+            var circle_marker_73814e5c95c34d6bbcebeb7dcfd3c8bb = L.circleMarker(
+                [41.8379385,-87.651028],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_e0b369b9bcc14d599341b58168aad80e = L.popup({maxWidth: '300'});
+
+            
+                var html_662afb8e9c2148cf9b690af62e5f63d3 = $('<div id="html_662afb8e9c2148cf9b690af62e5f63d3" style="width: 100.0%; height: 100.0%;">Bridgeport, Chicago, IL, cluster: 1</div>')[0];
+                popup_e0b369b9bcc14d599341b58168aad80e.setContent(html_662afb8e9c2148cf9b690af62e5f63d3);
+            
+
+            circle_marker_73814e5c95c34d6bbcebeb7dcfd3c8bb.bindPopup(popup_e0b369b9bcc14d599341b58168aad80e);
+
+            
+        
+    
+            var circle_marker_a7a6528ce6524368889b8be8c470b588 = L.circleMarker(
+                [41.807533299999996,-87.6564403],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_a107373bc7a446c98a9baeb8e323ace9 = L.popup({maxWidth: '300'});
+
+            
+                var html_a82645931fa54caa91ca7e7d6149506a = $('<div id="html_a82645931fa54caa91ca7e7d6149506a" style="width: 100.0%; height: 100.0%;">New City, Chicago, IL, cluster: 0</div>')[0];
+                popup_a107373bc7a446c98a9baeb8e323ace9.setContent(html_a82645931fa54caa91ca7e7d6149506a);
+            
+
+            circle_marker_a7a6528ce6524368889b8be8c470b588.bindPopup(popup_a107373bc7a446c98a9baeb8e323ace9);
+
+            
+        
+    
+            var circle_marker_26a7687b50604f3f9673a94d995701d2 = L.circleMarker(
+                [41.7939217,-87.7244978],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_cf50582b06f34a939846c9e887559191 = L.popup({maxWidth: '300'});
+
+            
+                var html_72bf1e54639947ea9ce2f7b329d47aad = $('<div id="html_72bf1e54639947ea9ce2f7b329d47aad" style="width: 100.0%; height: 100.0%;">West Elsdon, Chicago, IL, cluster: 2</div>')[0];
+                popup_cf50582b06f34a939846c9e887559191.setContent(html_72bf1e54639947ea9ce2f7b329d47aad);
+            
+
+            circle_marker_26a7687b50604f3f9673a94d995701d2.bindPopup(popup_cf50582b06f34a939846c9e887559191);
+
+            
+        
+    
+            var circle_marker_f36b029a56924eae8ba4f8d3cbfecbe7 = L.circleMarker(
+                [41.795033000000004,-87.69616359999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8e7e685538ae4b399f49ff2c9530479e = L.popup({maxWidth: '300'});
+
+            
+                var html_cfa56c3cc9164ef28935e174b815c37b = $('<div id="html_cfa56c3cc9164ef28935e174b815c37b" style="width: 100.0%; height: 100.0%;">Gage Park, Chicago, IL, cluster: 2</div>')[0];
+                popup_8e7e685538ae4b399f49ff2c9530479e.setContent(html_cfa56c3cc9164ef28935e174b815c37b);
+            
+
+            circle_marker_f36b029a56924eae8ba4f8d3cbfecbe7.bindPopup(popup_8e7e685538ae4b399f49ff2c9530479e);
+
+            
+        
+    
+            var circle_marker_6e2df1d7f0ae4381a8a6cd8bd8f4a77f = L.circleMarker(
+                [41.780588,-87.77338809999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_ca44b9e78bd34b5eb612e405a8966957 = L.popup({maxWidth: '300'});
+
+            
+                var html_11c66dae533649cdac1afbcdffc13231 = $('<div id="html_11c66dae533649cdac1afbcdffc13231" style="width: 100.0%; height: 100.0%;">Clearing, Chicago, IL, cluster: 1</div>')[0];
+                popup_ca44b9e78bd34b5eb612e405a8966957.setContent(html_11c66dae533649cdac1afbcdffc13231);
+            
+
+            circle_marker_6e2df1d7f0ae4381a8a6cd8bd8f4a77f.bindPopup(popup_ca44b9e78bd34b5eb612e405a8966957);
+
+            
+        
+    
+            var circle_marker_b382e47ed84d4e088d7742a96fc30975 = L.circleMarker(
+                [41.7728107,-87.722275],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_e2b23192246540d1b4fc098f266d4620 = L.popup({maxWidth: '300'});
+
+            
+                var html_975dde6fad9842479d0c5064b306de07 = $('<div id="html_975dde6fad9842479d0c5064b306de07" style="width: 100.0%; height: 100.0%;">West Lawn, Chicago, IL, cluster: 2</div>')[0];
+                popup_e2b23192246540d1b4fc098f266d4620.setContent(html_975dde6fad9842479d0c5064b306de07);
+            
+
+            circle_marker_b382e47ed84d4e088d7742a96fc30975.bindPopup(popup_e2b23192246540d1b4fc098f266d4620);
+
+            
+        
+    
+            var circle_marker_ab3b76f5517a418da19cb4355b900aa3 = L.circleMarker(
+                [41.7750332,-87.69644079999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_d512d83cf7f84b04aeb4eff52a2f4041 = L.popup({maxWidth: '300'});
+
+            
+                var html_bd644930e28c4df084891d5d9e933fe4 = $('<div id="html_bd644930e28c4df084891d5d9e933fe4" style="width: 100.0%; height: 100.0%;">Chicago Lawn, Chicago, IL, cluster: 0</div>')[0];
+                popup_d512d83cf7f84b04aeb4eff52a2f4041.setContent(html_bd644930e28c4df084891d5d9e933fe4);
+            
+
+            circle_marker_ab3b76f5517a418da19cb4355b900aa3.bindPopup(popup_d512d83cf7f84b04aeb4eff52a2f4041);
+
+            
+        
+    
+            var circle_marker_4190e33e280543e0875a367ddc85dfa3 = L.circleMarker(
+                [41.7780891,-87.6667177],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_3e01a4f6808542628feb388fb79fb37d = L.popup({maxWidth: '300'});
+
+            
+                var html_359975e39ae34d75a9126a9598671a2d = $('<div id="html_359975e39ae34d75a9126a9598671a2d" style="width: 100.0%; height: 100.0%;">West Englewood, Chicago, IL, cluster: 0</div>')[0];
+                popup_3e01a4f6808542628feb388fb79fb37d.setContent(html_359975e39ae34d75a9126a9598671a2d);
+            
+
+            circle_marker_4190e33e280543e0875a367ddc85dfa3.bindPopup(popup_3e01a4f6808542628feb388fb79fb37d);
+
+            
+        
+    
+            var circle_marker_b99d95fc0e8d4941bb3c7c3affee61a8 = L.circleMarker(
+                [41.7797559,-87.64588359999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8b2cf38c87474ddbae62041ff8054016 = L.popup({maxWidth: '300'});
+
+            
+                var html_52bc15d519ec4bb6ac3411d4af45b2cb = $('<div id="html_52bc15d519ec4bb6ac3411d4af45b2cb" style="width: 100.0%; height: 100.0%;">Englewood, Chicago, IL, cluster: 0</div>')[0];
+                popup_8b2cf38c87474ddbae62041ff8054016.setContent(html_52bc15d519ec4bb6ac3411d4af45b2cb);
+            
+
+            circle_marker_b99d95fc0e8d4941bb3c7c3affee61a8.bindPopup(popup_8b2cf38c87474ddbae62041ff8054016);
+
+            
+        
+    
+            var circle_marker_13f22084df954af88589ca55b9bc2547 = L.circleMarker(
+                [41.76258065,-87.6003196082787],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_076c5c2fea424b51b2e180503d59c842 = L.popup({maxWidth: '300'});
+
+            
+                var html_c28a74a1c560494898dc7f37963d84df = $('<div id="html_c28a74a1c560494898dc7f37963d84df" style="width: 100.0%; height: 100.0%;">Greater Grand Crossing, Chicago, IL, cluster: 1</div>')[0];
+                popup_076c5c2fea424b51b2e180503d59c842.setContent(html_c28a74a1c560494898dc7f37963d84df);
+            
+
+            circle_marker_13f22084df954af88589ca55b9bc2547.bindPopup(popup_076c5c2fea424b51b2e180503d59c842);
+
+            
+        
+    
+            var circle_marker_99fcbd36fd474d55b47f197d2afa516a = L.circleMarker(
+                [41.74753320000001,-87.7111628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_4edf9676c849463d9acd053458a66f8c = L.popup({maxWidth: '300'});
+
+            
+                var html_f774b45308f34944a14c9b33a19dc621 = $('<div id="html_f774b45308f34944a14c9b33a19dc621" style="width: 100.0%; height: 100.0%;">Ashburn, Chicago, IL, cluster: 1</div>')[0];
+                popup_4edf9676c849463d9acd053458a66f8c.setContent(html_f774b45308f34944a14c9b33a19dc621);
+            
+
+            circle_marker_99fcbd36fd474d55b47f197d2afa516a.bindPopup(popup_4edf9676c849463d9acd053458a66f8c);
+
+            
+        
+    
+            var circle_marker_e837389ff7114eda932e0beff9b64acc = L.circleMarker(
+                [41.750474,-87.6643042],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8bc09dfd3f1d4a5ca2379aab7afd907f = L.popup({maxWidth: '300'});
+
+            
+                var html_107a8e79dc5e454799cdb35e6bde8330 = $('<div id="html_107a8e79dc5e454799cdb35e6bde8330" style="width: 100.0%; height: 100.0%;">Auburn Gresham, Chicago, IL, cluster: 0</div>')[0];
+                popup_8bc09dfd3f1d4a5ca2379aab7afd907f.setContent(html_107a8e79dc5e454799cdb35e6bde8330);
+            
+
+            circle_marker_e837389ff7114eda932e0beff9b64acc.bindPopup(popup_8bc09dfd3f1d4a5ca2379aab7afd907f);
+
+            
+        
+    
+            var circle_marker_3c1b9f1179ce496f878bec768a8be53d = L.circleMarker(
+                [41.7181532,-87.67176740000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_a6a0e9dea941457c90a4e9458b3d42df = L.popup({maxWidth: '300'});
+
+            
+                var html_3c79e01d60b441429c2b8e4e0f36fd69 = $('<div id="html_3c79e01d60b441429c2b8e4e0f36fd69" style="width: 100.0%; height: 100.0%;">Beverly, Chicago, IL, cluster: 0</div>')[0];
+                popup_a6a0e9dea941457c90a4e9458b3d42df.setContent(html_3c79e01d60b441429c2b8e4e0f36fd69);
+            
+
+            circle_marker_3c1b9f1179ce496f878bec768a8be53d.bindPopup(popup_a6a0e9dea941457c90a4e9458b3d42df);
+
+            
+        
+    
+            var circle_marker_6558dfb39aac4bae863ba5e683df2437 = L.circleMarker(
+                [41.7064229,-87.65616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_51d041eed4ed47b098959e74368393b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca83b487f23f4ae7905c2260e83a36e6 = $('<div id="html_ca83b487f23f4ae7905c2260e83a36e6" style="width: 100.0%; height: 100.0%;">Washington Heights, Chicago, IL, cluster: 0</div>')[0];
+                popup_51d041eed4ed47b098959e74368393b5.setContent(html_ca83b487f23f4ae7905c2260e83a36e6);
+            
+
+            circle_marker_6558dfb39aac4bae863ba5e683df2437.bindPopup(popup_51d041eed4ed47b098959e74368393b5);
+
+            
+        
+    
+            var circle_marker_85f8fa565a1a468481efafdbe429b748 = L.circleMarker(
+                [41.6980891,-87.7086616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_54b55afce426451aa13f725381475e33 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a92517bcfc44b0a9a4a679ee41768fc = $('<div id="html_1a92517bcfc44b0a9a4a679ee41768fc" style="width: 100.0%; height: 100.0%;">Mount Greenwood, Chicago, IL, cluster: 1</div>')[0];
+                popup_54b55afce426451aa13f725381475e33.setContent(html_1a92517bcfc44b0a9a4a679ee41768fc);
+            
+
+            circle_marker_85f8fa565a1a468481efafdbe429b748.bindPopup(popup_54b55afce426451aa13f725381475e33);
+
+            
+        
+    
+            var circle_marker_e4b0451bc6dc4572ae7dd7305453b0d5 = L.circleMarker(
+                [41.6903117,-87.66671559999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_c8136c7f105c49838abf05d2a5a0d45b = L.popup({maxWidth: '300'});
+
+            
+                var html_c88a1687dbb04facb8bf17e59eecb703 = $('<div id="html_c88a1687dbb04facb8bf17e59eecb703" style="width: 100.0%; height: 100.0%;">Morgan Park, Chicago, IL, cluster: 1</div>')[0];
+                popup_c8136c7f105c49838abf05d2a5a0d45b.setContent(html_c88a1687dbb04facb8bf17e59eecb703);
+            
+
+            circle_marker_e4b0451bc6dc4572ae7dd7305453b0d5.bindPopup(popup_c8136c7f105c49838abf05d2a5a0d45b);
+
+            
+        
+    
+            var circle_marker_6a8943ab1f4c449199cd49d9a1c7773d = L.circleMarker(
+                [41.97310105,-87.90676788547229],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_8136f569946b4814b079e0cb59493b3c = L.popup({maxWidth: '300'});
+
+            
+                var html_56eb7e2ba4a84127869648053ba6355d = $('<div id="html_56eb7e2ba4a84127869648053ba6355d" style="width: 100.0%; height: 100.0%;">O&#39;Hare, Chicago, IL, cluster: 3</div>')[0];
+                popup_8136f569946b4814b079e0cb59493b3c.setContent(html_56eb7e2ba4a84127869648053ba6355d);
+            
+
+            circle_marker_6a8943ab1f4c449199cd49d9a1c7773d.bindPopup(popup_8136f569946b4814b079e0cb59493b3c);
+
+            
+        
+    
+            var circle_marker_29ca990d6bc84b279f3eff9842fe9120 = L.circleMarker(
+                [41.9833689,-87.66395159999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_5da7fd2c5a034e4c9e6ad4a988d91a05);
+            
+    
+            var popup_28313bcec10740e7b34caca94eb6de34 = L.popup({maxWidth: '300'});
+
+            
+                var html_18157c45e04642b1b34fbd43831abbdf = $('<div id="html_18157c45e04642b1b34fbd43831abbdf" style="width: 100.0%; height: 100.0%;">Edgewater, Chicago, IL, cluster: 3</div>')[0];
+                popup_28313bcec10740e7b34caca94eb6de34.setContent(html_18157c45e04642b1b34fbd43831abbdf);
+            
+
+            circle_marker_29ca990d6bc84b279f3eff9842fe9120.bindPopup(popup_28313bcec10740e7b34caca94eb6de34);
+
+            
+        
+</script>
