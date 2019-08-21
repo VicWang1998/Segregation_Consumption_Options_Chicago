@@ -7,7 +7,7 @@ I first used Toronto data to learn and test using Foursqure API to cluster neigh
 ### Main Project: Segregation and Consumption Options in Chicago
 For the main project, I chose to inspect differences about venue types among the 77 Chicago community areas, and try to relate such divergence to the racial and economic segregation prevailing the city. 
 
-Codes for the project are stored in a the folder "Segregation_Consumption_Chicago", in a Jupyter Notebook file named "Segregation and Shopping Options in Chicago"; 
+Codes for the project are stored in a the folder "Segregation_Consumption_Chicago", in a Jupyter Notebook file named "Segregation and Shopping Options in Chicago";     
 full report is stored in the PDF file named "Coursera Captone Report" in the same folder.
 
 8.21 Update: 
