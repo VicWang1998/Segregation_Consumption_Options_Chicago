@@ -1,5 +1,5 @@
 ## Coursera Capstone Project
-This is a repository for the IBM coursera course capstone project. It consists of a mini-project and a main project. 
+This is a repository for the IBM Data Science capstone project. It consists of a mini-project and a main project. 
 
 ### Mimi-Project: Toronto Neighborhoods
 I first used Toronto data to learn and test using Foursqure API to cluster neighborhoods. I scraped Toronto postcode data from a webpage and used it to obtain Toronto neighborhood coordinates. Then I searched for venues using Foursquare API and conducted K-Means Clustering onto the resulting data.  
