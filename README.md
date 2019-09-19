@@ -1,4 +1,4 @@
-## Coursera Capstone Project
+## Segregation and Consumption Options in Chicago
 This is a repository for the IBM Data Science capstone project. It consists of a mini-project and a main project. 
 
 ### Mimi-Project: Toronto Neighborhoods
